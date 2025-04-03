@@ -113,7 +113,7 @@ Add-Content $EventLogReportFileName "}"
 Add-Content $EventLogReportFileName "</style>"
 Add-Content $EventLogReportFileName "</head>"
 Add-Content $EventLogReportFileName '<body style="background-color:lightgrey;">'
-Add-Content $EventLogReportFileName "<center><H2>System Cleanup Report</H2></center>"
+Add-Content $EventLogReportFileName "<center><H2>Event Log Report for $(hostname)</H2></center>"
 Add-Content $EventLogReportFileName "<p>&nbsp;&nbsp</p>"
 1..3 | % {
 	$EventType = $_
